@@ -1,7 +1,5 @@
 package ba.BITCamp.A_Team.CurrencyProject;
 
-import lectures.TextIO;
-
 public class Adis {
 
 	/**
