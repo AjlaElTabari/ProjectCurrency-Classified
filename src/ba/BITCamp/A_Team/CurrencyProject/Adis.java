@@ -1,4 +1,5 @@
 package ba.BITCamp.A_Team.CurrencyProject;
+import java.io.FileNotFoundException;
 
 public class Adis {
 
@@ -8,10 +9,10 @@ public class Adis {
 	 * @param currency - Wanted currency
 	 * @return String value of exchange rate
 	 */
-	public static String getExchangeRates(String currency) {
+	public static String getExchangeRates(String currency, String excangeCurrencyRatesFileName) {
 
 		// Reading file that contains information about exchange currency rates
-		TextIO.readFile("src/lectures/Currency.txt");
+		TextIO.readFile(excangeCurrencyRatesFileName);
 
 		String exchangeRate = "";
 
@@ -29,5 +30,8 @@ public class Adis {
 
 		return exchangeRate;
 	}
+	
+	
+	
 	
 }
