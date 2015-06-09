@@ -19,10 +19,9 @@ public class Adis {
 		// Going trough file and searching wanted currency rate
 		while (!TextIO.eof()) {
 			String str = TextIO.getln();
-			if (str.indexOf(currency) >= 0) {
+			if (currency.equals(str.substring(0, 3))){
 				String[] string = str.split(" ");
 				exchangeRate = string[1];
-
 			}
 		}
 		
